@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133EAE8F24D9C099001B8B0A /* Defaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133EAE8D24D9BD89001B8B0A /* Defaults.framework */; };
-		133EAE9024D9C099001B8B0A /* Defaults.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 133EAE8D24D9BD89001B8B0A /* Defaults.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		136A8CF71FF8CF5F0031C7DA /* ConvertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A8CF61FF8CF5F0031C7DA /* ConvertManager.swift */; };
-		13C056CC24E0E0A000FAACCD /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C056CA24E0E07D00FAACCD /* Preferences.framework */; };
-		13C056CD24E0E0A000FAACCD /* Preferences.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13C056CA24E0E07D00FAACCD /* Preferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13C056CF24E0E25100FAACCD /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C056CE24E0E25100FAACCD /* Defaults.swift */; };
 		13C056D124E0E33000FAACCD /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C056D024E0E33000FAACCD /* Preferences.swift */; };
 		13C056D324E0EB4E00FAACCD /* GeneralPreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C056D224E0EB4E00FAACCD /* GeneralPreferenceViewController.xib */; };
@@ -27,6 +23,8 @@
 		C7E946071A5FC9940024581F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E946061A5FC9940024581F /* Images.xcassets */; };
 		C7E9460A1A5FC9940024581F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E946081A5FC9940024581F /* Main.storyboard */; };
 		C7F4ADB71AA720A100F9A696 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = C7F4ADB61AA720A100F9A696 /* Credits.html */; };
+		DA23EB242B7B7E500016A63B /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = DA23EB232B7B7E500016A63B /* Defaults */; };
+		DA23EB272B7B7E6C0016A63B /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = DA23EB262B7B7E6C0016A63B /* Settings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				133EAE9024D9C099001B8B0A /* Defaults.framework in CopyFiles */,
-				13C056CD24E0E0A000FAACCD /* Preferences.framework in CopyFiles */,
 				88D6078D22C8502300849553 /* WebP.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,11 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		133EAE8D24D9BD89001B8B0A /* Defaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Defaults.framework; path = Carthage/Build/Mac/Defaults.framework; sourceTree = "<group>"; };
 		136A8CEF1FF7E1460031C7DA /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Carthage/Build/Mac/WebP.framework; sourceTree = "<group>"; };
 		136A8CF61FF8CF5F0031C7DA /* ConvertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertManager.swift; sourceTree = "<group>"; };
 		137A4EAC24D6A9FD00B49228 /* WebPonize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebPonize.entitlements; sourceTree = "<group>"; };
-		13C056CA24E0E07D00FAACCD /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Carthage/Build/Mac/Preferences.framework; sourceTree = "<group>"; };
 		13C056CE24E0E25100FAACCD /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		13C056D024E0E33000FAACCD /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		13C056D224E0EB4E00FAACCD /* GeneralPreferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GeneralPreferenceViewController.xib; path = WebPonize/controller/GeneralPreferenceViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -84,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133EAE8F24D9C099001B8B0A /* Defaults.framework in Frameworks */,
-				13C056CC24E0E0A000FAACCD /* Preferences.framework in Frameworks */,
+				DA23EB242B7B7E500016A63B /* Defaults in Frameworks */,
+				DA23EB272B7B7E6C0016A63B /* Settings in Frameworks */,
 				88D6078C22C8502300849553 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,8 +104,6 @@
 		136A8CEE1FF7E1460031C7DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				133EAE8D24D9BD89001B8B0A /* Defaults.framework */,
-				13C056CA24E0E07D00FAACCD /* Preferences.framework */,
 				136A8CEF1FF7E1460031C7DA /* WebP.framework */,
 			);
 			name = Frameworks;
@@ -225,6 +217,10 @@
 			dependencies = (
 			);
 			name = WebPonize;
+			packageProductDependencies = (
+				DA23EB232B7B7E500016A63B /* Defaults */,
+				DA23EB262B7B7E6C0016A63B /* Settings */,
+			);
 			productName = WebPonize;
 			productReference = C7E945FD1A5FC9940024581F /* WebPonize.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +282,10 @@
 				Base,
 			);
 			mainGroup = C7E945F41A5FC9940024581F;
+			packageReferences = (
+				DA23EB222B7B7E500016A63B /* XCRemoteSwiftPackageReference "Defaults" */,
+				DA23EB252B7B7E6C0016A63B /* XCRemoteSwiftPackageReference "Settings" */,
+			);
 			productRefGroup = C7E945FE1A5FC9940024581F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -462,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -495,7 +495,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.6.0;
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shogosensui.WebPonize;
@@ -530,7 +530,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.6.0;
 				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shogosensui.WebPonize;
@@ -625,6 +625,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA23EB222B7B7E500016A63B /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				kind = exactVersion;
+				version = 8.1.1;
+			};
+		};
+		DA23EB252B7B7E6C0016A63B /* XCRemoteSwiftPackageReference "Settings" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Settings";
+			requirement = {
+				kind = exactVersion;
+				version = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA23EB232B7B7E500016A63B /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA23EB222B7B7E500016A63B /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		DA23EB262B7B7E6C0016A63B /* Settings */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA23EB252B7B7E6C0016A63B /* XCRemoteSwiftPackageReference "Settings" */;
+			productName = Settings;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7E945F51A5FC9940024581F /* Project object */;
 }

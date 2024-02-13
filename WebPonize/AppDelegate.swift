@@ -1,5 +1,5 @@
 import Cocoa
-import Preferences
+import Settings
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -7,8 +7,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     static var queue = OperationQueue()
     
     lazy var mainWindowController = MainWindowController()
-    lazy var preferencesWindowController = PreferencesWindowController(
-        preferencePanes: [
+    lazy var preferencesWindowController = SettingsWindowController(
+        panes: [
             GeneralPreferenceViewController()
         ],
         style: .toolbarItems

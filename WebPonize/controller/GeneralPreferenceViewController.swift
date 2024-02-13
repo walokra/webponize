@@ -1,16 +1,16 @@
 import Cocoa
 import Defaults
-import Preferences
+import Settings
 
-class GeneralPreferenceViewController: NSViewController, PreferencePane {
+class GeneralPreferenceViewController: NSViewController, SettingsPane {
     @IBOutlet weak var quality: NSSlider!
     @IBOutlet weak var speed: NSSlider!
     @IBOutlet weak var lossless: NSButton!
     @IBOutlet weak var qualityLabel: NSTextField!
     @IBOutlet weak var speedLabel: NSTextField!
     
-    let preferencePaneIdentifier = Preferences.PaneIdentifier.general
-    let preferencePaneTitle = "General"
+    let paneIdentifier = Settings.PaneIdentifier.general
+    let paneTitle = "General"
     let toolbarItemIcon = NSImage(named: NSImage.preferencesGeneralName)!
     
     override var nibName: NSNib.Name? { "GeneralPreferenceViewController" }
