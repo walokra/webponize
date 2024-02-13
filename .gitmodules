@@ -1,3 +1,0 @@
-[submodule "Carthage/Checkouts/Swift-WebP"]
-  path = Carthage/Checkouts/Swift-WebP
-  url = ssh://git@github.com/ainame/Swift-WebP.git

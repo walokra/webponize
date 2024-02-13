@@ -12,8 +12,6 @@
 		13C056D124E0E33000FAACCD /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C056D024E0E33000FAACCD /* Preferences.swift */; };
 		13C056D324E0EB4E00FAACCD /* GeneralPreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C056D224E0EB4E00FAACCD /* GeneralPreferenceViewController.xib */; };
 		13CB33721B1007BE005BB607 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB33711B1007BE005BB607 /* Status.swift */; };
-		88D6078C22C8502300849553 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136A8CEF1FF7E1460031C7DA /* WebP.framework */; };
-		88D6078D22C8502300849553 /* WebP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 136A8CEF1FF7E1460031C7DA /* WebP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7A61A4B1A846CE200693007 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A61A451A846CE200693007 /* MainView.swift */; };
 		C7A61A541A846CEA00693007 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A61A501A846CEA00693007 /* MainViewController.swift */; };
 		C7A61A551A846CEA00693007 /* GeneralPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A61A511A846CEA00693007 /* GeneralPreferenceViewController.swift */; };
@@ -25,6 +23,7 @@
 		C7F4ADB71AA720A100F9A696 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = C7F4ADB61AA720A100F9A696 /* Credits.html */; };
 		DA23EB242B7B7E500016A63B /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = DA23EB232B7B7E500016A63B /* Defaults */; };
 		DA23EB272B7B7E6C0016A63B /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = DA23EB262B7B7E6C0016A63B /* Settings */; };
+		DA4EB4622B7B8925005B76A4 /* WebP in Frameworks */ = {isa = PBXBuildFile; productRef = DA4EB4612B7B8925005B76A4 /* WebP */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +43,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				88D6078D22C8502300849553 /* WebP.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		136A8CEF1FF7E1460031C7DA /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Carthage/Build/Mac/WebP.framework; sourceTree = "<group>"; };
 		136A8CF61FF8CF5F0031C7DA /* ConvertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertManager.swift; sourceTree = "<group>"; };
 		137A4EAC24D6A9FD00B49228 /* WebPonize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebPonize.entitlements; sourceTree = "<group>"; };
 		13C056CE24E0E25100FAACCD /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
@@ -79,8 +76,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA23EB242B7B7E500016A63B /* Defaults in Frameworks */,
+				DA4EB4622B7B8925005B76A4 /* WebP in Frameworks */,
 				DA23EB272B7B7E6C0016A63B /* Settings in Frameworks */,
-				88D6078C22C8502300849553 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +101,6 @@
 		136A8CEE1FF7E1460031C7DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				136A8CEF1FF7E1460031C7DA /* WebP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +216,7 @@
 			packageProductDependencies = (
 				DA23EB232B7B7E500016A63B /* Defaults */,
 				DA23EB262B7B7E6C0016A63B /* Settings */,
+				DA4EB4612B7B8925005B76A4 /* WebP */,
 			);
 			productName = WebPonize;
 			productReference = C7E945FD1A5FC9940024581F /* WebPonize.app */;
@@ -285,6 +282,7 @@
 			packageReferences = (
 				DA23EB222B7B7E500016A63B /* XCRemoteSwiftPackageReference "Defaults" */,
 				DA23EB252B7B7E6C0016A63B /* XCRemoteSwiftPackageReference "Settings" */,
+				DA4EB4602B7B8925005B76A4 /* XCRemoteSwiftPackageReference "Swift-WebP" */,
 			);
 			productRefGroup = C7E945FE1A5FC9940024581F /* Products */;
 			projectDirPath = "";
@@ -643,6 +641,14 @@
 				version = 3.0.0;
 			};
 		};
+		DA4EB4602B7B8925005B76A4 /* XCRemoteSwiftPackageReference "Swift-WebP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/walokra/Swift-WebP";
+			requirement = {
+				branch = dev;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -655,6 +661,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DA23EB252B7B7E6C0016A63B /* XCRemoteSwiftPackageReference "Settings" */;
 			productName = Settings;
+		};
+		DA4EB4612B7B8925005B76A4 /* WebP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA4EB4602B7B8925005B76A4 /* XCRemoteSwiftPackageReference "Swift-WebP" */;
+			productName = WebP;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
